@@ -18,8 +18,8 @@ impl SePolicy {
         // Create new types
         self.type_(SEPOL_PROC_DOMAIN, &["domain"]);
         self.typeattribute(&[SEPOL_PROC_DOMAIN], &["mlstrustedsubject", "netdomain", "appdomain"]);
-        self.type_(SEPOL_FILE_TYPE, &["file_type"]);
-        self.typeattribute(&[SEPOL_FILE_TYPE], &["mlstrustedobject"]);
+     //   self.type_(SEPOL_FILE_TYPE, &["file_type"]);
+     //   self.typeattribute(&[SEPOL_FILE_TYPE], &["mlstrustedobject"]);
 
 
 
