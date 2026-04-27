@@ -6,7 +6,7 @@
 use crate::{SePolicy, Xperm};
 
 /// Default process domain for Magisk
-pub const SEPOL_PROC_DOMAIN: &str = "magisk";
+pub const SEPOL_PROC_DOMAIN: &str = "su";
 /// Default file type for Magisk
 pub const SEPOL_FILE_TYPE: &str = "magisk_file";
 /// Default log type for Magisk
@@ -18,8 +18,8 @@ impl SePolicy {
         // Create new types
         self.type_(SEPOL_PROC_DOMAIN, &["domain"]);
         self.typeattribute(&[SEPOL_PROC_DOMAIN], &["mlstrustedsubject", "netdomain", "appdomain"]);
-        self.type_(SEPOL_FILE_TYPE, &["file_type"]);
-        self.typeattribute(&[SEPOL_FILE_TYPE], &["mlstrustedobject"]);
+       // self.type_(SEPOL_FILE_TYPE, &["file_type"]);
+      //  self.typeattribute(&[SEPOL_FILE_TYPE], &["mlstrustedobject"]);
 
 
 
