@@ -6,7 +6,7 @@
 use crate::{SePolicy, Xperm};
 
 /// Default process domain for Magisk
-pub const SEPOL_PROC_DOMAIN: &str = "su";
+pub const SEPOL_PROC_DOMAIN: &str = "hex";
 /// Default file type for Magisk
 pub const SEPOL_FILE_TYPE: &str = "magisk_file";
 /// Default log type for Magisk
